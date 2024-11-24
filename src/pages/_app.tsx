@@ -1,7 +1,7 @@
-import type { AppProps } from 'next/app';
-import '../styles/globals.css';
+import React from 'react';
+import '../styles/globals.css'; // ודא שקובץ הסגנונות קיים
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: { Component: React.ElementType; pageProps: any }) {
   return <Component {...pageProps} />;
 }
 
